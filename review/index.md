@@ -16,5 +16,5 @@ In the end, we have a common goal to deliver a quality product which is stable a
 ## Structure
 
 There are two parts of this guide:
-* [For reviewers of the code](review/reviewer/index.md)
-* [For authors of a change](review/developer/index.md)
+* [For reviewers of the code](reviewer/index.md)
+* [For authors of a change](developer/index.md)
