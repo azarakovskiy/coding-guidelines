@@ -12,3 +12,9 @@ It is a crucial process that helps:
 
 Therefore it must be taken seriously by both reviewers and developers and must be seen as *a tool that helps to write good code* rather than a tool that slows down your delivery. 
 In the end, we have a common goal to deliver a quality product which is stable and enjoyable to work with
+
+## Structure
+
+There are two parts of this guide:
+* [For reviewers of the code](review/reviewer/index.md)
+* [For authors of a change](review/developer/index.md)
