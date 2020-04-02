@@ -1,6 +1,6 @@
 ## Coding guidelines
 
-Having a common ground to everyday tasks is essential to be able to scalte teams. Therefore we have decided in Beat to create such common ground. 
+Having a common ground to everyday tasks is essential to be able to scale teams. Therefore we have decided in Beat to create such common ground. 
 
 Currently, we have:
 * [Code Review Guidelines](review/index.md)
