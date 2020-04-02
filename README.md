@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+## Coding guidelines
 
-You can use the [editor on GitHub](https://github.com/azarakovskiy/coding-guidelines/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Having a common ground to everyday tasks is essential to be able to scalte teams. Therefore we have decided in Beat to create such common ground. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Currently, we have:
+* [Code Review Guidelines](review/index.md)
 
-### Markdown
+## Fork this into your domain
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Every domain, every craft within the organization might have important things and conventions that are very specific to this domain or craft, hence is not worth sharing the the rest of Beat.
 
-```markdown
-Syntax highlighted code block
+Yet you want to use some generic approaches described here.
 
-# Header 1
-## Header 2
-### Header 3
+We suggest that you fork this repository and add detail that are important for your domain or craft.
 
-- Bulleted
-- List
+## Publicity
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/azarakovskiy/coding-guidelines/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+This document is publicly published using GitHub Pages. If you fork it, you may also enable publishing but you need to be aware to not to add any sensitive content in that case.
