@@ -17,12 +17,21 @@ Additionally, in _pricing team_ we have got few internal agreements on specific 
 
 There might be more than one guideline to address a category of problems. These guidelines will use a combination of 📙 and 📗 labels.
 
-## Project structure
+### Table of content
+
+* [Project structure](#project-structure)
+    * [Dependencies between `internal/app` and `internal/infra`](#dependencies)
+    * [Dependency injection](#dependency-injection)
+* [Code style](#code-style)
+    * [Accept interfaces, return structs](#accept-interfaces)
+    * [Method names](#method-names)
+
+## Project structure {#project-structure}
 
 We use [Canary service](https://github.com/taxibeat/canary-service) as a template for our microservices.
 It includes our standard toolkit such as Go, Patron, Kafka, etc.
 
-### Dependencies between `internal/app` and `internal/infra`
+### Dependencies between `internal/app` and `internal/infra` {#dependencies}
 
 Each project is roughly divided into two parts: `internal/app` and `internal/infra`. 
 
@@ -35,7 +44,7 @@ The latter contains specific implementation of these components, e.g. to save da
 
 📙 `internal/infra` should implement interfaces from `internal/app`.
 
-### Dependency injection
+### Dependency injection {#dependency-injection}
 
 The place for dependency injection and building application sits in /internal and should be called /internal/<app-name>.go (replace <app-name> with the name of the app, for example in fare-service it is /internal/fare.go). The builder makes sure to import interfaces and packages and setup final dependencies.
 
@@ -52,17 +61,16 @@ It defines a single method that couples all the parts of an application together
 
 📕 Dependency injection must happen in `internal/<app-name>.go` with a single public method.
 
+## Code style {#code-style}
 
-## Code style
-
-### Accept interfaces, return structs
+### Accept interfaces, return structs {#accept-interfaces}
 
 To decouple implementations from interfaces and help testing, it is advised that your methods accept interfaces and parameters but return concrete struct.
 More clarification you can find [here](https://medium.com/@cep21/what-accept-interfaces-return-structs-means-in-go-2fe879e25ee8)
 
 📙 Methods should accept interfaces but return structs.
 
-### Method names
+### Method names {#method-names}
 
 As per Go's convention, naming should be _short, concise, evocative_. There is no sense to repeat the name of a package or add any obvious information. 
 Prefer having `httpclient.New()` to `httpclient.NewHttpClient()`, or `rule.NewClient()` and `rule.NewService()` to `rule.NewRuleClient()` and `rule.NewRuleService()`.
@@ -78,7 +86,8 @@ package rule
 func NewClient() {  // OK
 }
 
-func New() { // Might be NOT OK, not clear what it returns, also possibly clashes with a rule.Service if exists
+func New() { // Might be NOT OK, not clear what it returns, 
+	         // also possibly clashes with a rule.Service if exists
 }
 
 func NewRuleClient() { // NOT OK, repeats package name
