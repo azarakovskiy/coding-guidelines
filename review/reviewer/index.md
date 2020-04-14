@@ -1,42 +1,44 @@
-### TL;DR
+## Review guidelines for reviewers 
 
-Start your day by looking here: [https://github.com/pulls/review-requested](https://github.com/pulls/review-requested).
-
-As a reviewer, you should at least make sure that a change does not degrade the code quality:
-
-1. The code is **well-designed**.
-2. The code is **not more complex than it needs to be** at the moment. Keep it simple.
-3. Any parallel programming is done safely.
-4. The code has appropriate **unit tests**.
-5. The code conforms to our [style guides](https://confluence.taxibeat.com/x/QbhPAQ).
-
-Make sure to review **every line** of code, look at the **context**, make sure you’re **improving code health**, and compliment developers on **good things**.
-
-If you can't review it during a reasonable time, let the author know about it.
-
-**Favor approving any change that definitely improves the overall code quality, even if it's not perfect.**
-
-#### Review process step by step
-* Before you start
-    1. Find the JIRA ticket.
-    2. Read the PR description.
-    3. Optionally talk to the author.
-    
-    You need to understand the *scope* of the change and *why* it has been made.
-    
-    Dedicate your time and attention to the review.
-* During review
-    1. Look for potential design issues.
-    2. Understand if the issue is solved by the change.
-    3. Is the code simple enough?
-    4. Do you understand easily every single line of code?
-    5. Do unit tests cover the functionality?
-    6. Is the code style correct?
-    7. If all the needed documentation up-to-date?
-    8. **Does the change improve the code quality even a little bit?**
-* After review
-    1. Dedicate your time even after the review as you might get requested to re-review it.
-    2. Help the author with anything if needed? By reviewing their code, you have also become responsible for that part.
+> ### TL;DR
+> 
+> Start your day by looking here: [https://github.com/pulls/review-requested](https://github.com/pulls/review-requested).
+>
+> As a reviewer, you should at least make sure that a change does not degrade the code quality:
+> 
+> 1. The code is **well-designed**.
+> 2. The code is **not more complex than it needs to be** at the moment. Keep it simple.
+> 3. Any parallel programming is done safely.
+> 4. The code has appropriate **unit tests**.
+> 5. The code conforms to our [style guides](https://confluence.taxibeat.com/x/QbhPAQ).
+> 
+> Make sure to review **every line** of code, look at the **context**, make sure you’re **improving code health**, and compliment developers on **good things**.
+> 
+> If you can't review it during a reasonable time, let the author know about it.
+> 
+> **Favor approving any change that definitely improves the overall code quality, even if it's not perfect.**
+> 
+> #### Review process step by step
+> * Before you start
+>   * Find the JIRA ticket.
+>   * Read the PR description.
+>   * Optionally talk to the author.
+> 
+> You need to understand the *scope* of the change and *why* it has been made.
+> 
+> Dedicate your time and attention to the review.
+> * During review
+>   * Look for potential design issues.
+>   * Understand if the issue is solved by the change.
+>   * Is the code simple enough?
+>   * Do you understand easily every single line of code?
+>   * Do unit tests cover the functionality?
+>   * Is the code style correct?
+>   * If all the needed documentation up-to-date?
+>   * **Does the change improve the code quality even a little bit?**
+> * After review
+>   * Dedicate your time even after the review as you might get requested to re-review it.
+>   * Help the author with anything if needed? By reviewing their code, you have also become responsible for that part.
 
 ### Purpose of code review
 

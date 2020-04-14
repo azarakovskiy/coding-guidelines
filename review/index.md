@@ -1,4 +1,4 @@
-## Overview
+## Change review guidelines
 
 _These guidelines are based on [Google's review guidelines](https://google.github.io/eng-practices/review/)._
 _It is also heavily cited. It is very much recommended to read the original guidelines to get a full picture._
