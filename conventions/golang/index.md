@@ -40,7 +40,7 @@ without concrete details of how individual components are implemented.
 
 The latter contains specific implementation of these components, e.g. to save data to an SQL database or consume Kafka stream.
 
-📕 `/internal/app` package must not import anything from `/internal/infra`.
+📕 `internal/app` package must not import anything from `internal/infra`.
 
 📙 `internal/infra` should implement interfaces from `internal/app`.
 
