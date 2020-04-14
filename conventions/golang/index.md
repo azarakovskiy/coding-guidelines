@@ -9,13 +9,13 @@ Additionally, in _pricing team_ we have got few internal agreements on specific 
 
 ### Legend
 
-📕 : it is a **MUST** and it should be followed no matter what.
+🔴 : it is a **MUST** and it should be followed no matter what.
 
-📙 : it is a **SHOULD** and should be followed unless there is a very compelling reason not to do so.
+🟠 : it is a **SHOULD** and should be followed unless there is a very compelling reason not to do so.
 
-📗 : it is a **COULD** and it is good to consider.
+🟢 : it is a **COULD** and it is good to consider.
 
-There might be more than one guideline to address a category of problems. These guidelines will use a combination of 📙 and 📗 labels.
+There might be more than one guideline to address a category of problems. These guidelines will use a combination of 🟠 and 🟢 labels.
 
 ### Table of content
 
@@ -40,9 +40,9 @@ without concrete details of how individual components are implemented.
 
 The latter contains specific implementation of these components, e.g. to save data to an SQL database or consume Kafka stream.
 
-📕 `internal/app` package must not import anything from `internal/infra`.
+🔴 `internal/app` package must not import anything from `internal/infra`.
 
-📙 `internal/infra` should implement interfaces from `internal/app`.
+🟠 `internal/infra` should implement interfaces from `internal/app`.
 
 ### Dependency injection {#dependency-injection}
 
@@ -59,7 +59,7 @@ It defines a single method that couples all the parts of an application together
 │   └── infra/
 ```
 
-📕 Dependency injection must happen in `internal/<app-name>.go` with a single public method.
+🔴 Dependency injection must happen in `internal/<app-name>.go` with a single public method.
 
 ## Code style {#code-style}
 
@@ -68,7 +68,7 @@ It defines a single method that couples all the parts of an application together
 To decouple implementations from interfaces and help testing, it is advised that your methods accept interfaces and parameters but return concrete struct.
 More clarification you can find [here](https://medium.com/@cep21/what-accept-interfaces-return-structs-means-in-go-2fe879e25ee8)
 
-📙 Methods should accept interfaces but return structs.
+🟠 Methods should accept interfaces but return structs.
 
 ### Method names {#method-names}
 
@@ -76,9 +76,9 @@ As per Go's convention, naming should be _short, concise, evocative_. There is n
 Prefer having `httpclient.New()` to `httpclient.NewHttpClient()`, or `rule.NewClient()` and `rule.NewService()` to `rule.NewRuleClient()` and `rule.NewRuleService()`.
 Yet, try not to drop any useful information from a name if it clearly helps reading the code (e.g. when there are client and a service in a single package, it is advised to separate their constructors).
 
-📕 Don't repeat package name in your method name.
+🔴 Don't repeat package name in your method name.
 
-📙 Don't drop any useful non-repetitive information from a method name.
+🟠 Don't drop any useful non-repetitive information from a method name.
 
 ```
 package rule
