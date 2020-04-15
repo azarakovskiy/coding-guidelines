@@ -1,1 +1,7 @@
+title: Pricing Engineering Practices
+email: prcg2@thebeat.co
+description: >- # this means to ignore newlines until "baseurl:"
+  Pricing Engineering Practices website contains a list of conventions, guidelines and agreements and establishes a common ground to everyday work.
+
+# Build settings
 theme: jekyll-theme-cayman
