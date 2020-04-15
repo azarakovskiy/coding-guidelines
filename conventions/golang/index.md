@@ -57,7 +57,7 @@ It defines a single method that couples all the parts of an application together
 │   └── infra/
 ```
 
-🔴 Dependency injection must happen in `internal/<app-name>.go` with a single public method.
+🔴 Dependency injection must happen in `internal/<app-name>.go`.
 
 ## Code style {#code-style}
 
