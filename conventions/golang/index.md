@@ -46,8 +46,6 @@ The latter contains specific implementation of these components, e.g. to save da
 
 ### Dependency injection {#dependency-injection}
 
-The place for dependency injection and building application sits in /internal and should be called /internal/<app-name>.go (replace <app-name> with the name of the app, for example in fare-service it is /internal/fare.go). The builder makes sure to import interfaces and packages and setup final dependencies.
-
 Since our `internal/app` package doesn't define which components' implementation it is using, we must do a dependency injection that defines it. 
 The place for it is a file `internal/<app-name>.go`; it is called from `main.go`. 
 It defines a single method that couples all the parts of an application together and makes sure to import interfaces and packages, and setup final dependencies.
