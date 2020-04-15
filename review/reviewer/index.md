@@ -10,7 +10,7 @@
 > 2. The code is **not more complex than it needs to be** at the moment. Keep it simple.
 > 3. Any parallel programming is done safely.
 > 4. The code has appropriate **unit tests**.
-> 5. The code conforms to our [style guides](https://confluence.taxibeat.com/x/QbhPAQ).
+> 5. The code conforms to our [style guides](../../conventions/golang/index.md).
 > 
 > Make sure to review **every line** of code, look at the **context**, make sure you’re **improving code health**, and compliment developers on **good things**.
 > 
@@ -71,7 +71,7 @@ Does it integrate well with the rest of your system? Is now a good time to add t
 
 **❤️ Comments**: Are the comments clear and useful?
 
-**❤️ Style**: Does the code follow our [style guides](https://confluence.taxibeat.com/x/QbhPAQ)?
+**❤️ Style**: Does the code follow our [style guides](../../conventions/golang/index.md)?
 
 **❤️ Documentation**: Did the developer also update relevant documentation?
 
@@ -104,7 +104,7 @@ there is always something that even the most senior developer doesn't know. Shar
 
 ### Judging principles
 * **❤️ Technical facts and data overrule opinions and personal preferences.**
-* On matters of style, the [style guide](https://confluence.taxibeat.com/x/QbhPAQ) is the absolute authority. 
+* On matters of style, the [style guide](../../conventions/golang/index.md) is the absolute authority. 
 If there is no previous style, accept the author’s. Consider adding it to the style guide if applicable.
 * Several approaches might be equally valid; in such a case, the reviewer should accept the preference of the author. 
 Otherwise the choice is dictated by standard principles of software design.
@@ -180,7 +180,7 @@ In any conflict on a code review, the first step should always be for the develo
 
 If a face-to-face discussion has not ended up with a decision, ask someone else's opinion but not the whole team.
 
-*Only if you* still can't come to an agreement, ask your team leader or engineering manager. They *must* make a decision. Consider adding this to our [style guide](https://confluence.taxibeat.com/x/QbhPAQ).
+*Only if you* still can't come to an agreement, ask your team leader or engineering manager. They *must* make a decision. Consider adding this to our [style guide](../../conventions/golang/index.md).
 
 **❤️ Always document in a PR what you have agreed on so that others can read it. Never keep it private.**
 
